@@ -1,0 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  background-color: #1abc9c;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+}
+
+.About {
+  background-color: #1abc9c;
+}
+
+nav {
+  background-color: #2c3e50;
+  padding: 10px;
+
+  .logo a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+  }
+}
+
+.about-component {
+  background-color: #20c997;
+  color: white;
+}
+
+.about-title {
+  font-weight: bold;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 70px;
+  height: 2px;
+  background-color: white;
+}
+
+.line2 {
+  width: 70px;
+  height: 5px;
+  background-color: white;
+}
+.star-icon {
+  font-size: 30px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  background-color: #1abc9c;
+}
+.footer {
+  background: #2c3e50;
+}
+.copy-right {
+  background-color: #1a252f;
+}
+
+.container .row .item p {
+  font-size: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.portfolio h1 {
+  color: #2c3e50;
+}
+.line3 {
+  background-color: white;
+}
+
+.line3 {
+  width: 70px;
+  background-color: #2c3e50;
+  height: 5px;
+}
+
+.star-icon3 {
+  font-size: 30px;
+  color: #2c3e50;
+}
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  transition: transform 0.3s ease;
+  cursor: pointer; /* للإشارة إلى أن العنصر قابل للنقر */
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1); /* تكبير الصورة عند التحويم */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1ab5969f;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+  i {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* خلفية داكنة */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* أعلى من بقية المحتوى */
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-content img {
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.modal-overlay {
+  cursor: pointer; /* لجعل النافذة المنبثقة قابلة للنقر */
+}
+
+button {
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container-contact {
+  margin: 50px auto;
+}
+
+.sf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50px; */
+
+  font-size: 3rem;
+  color: #1abc9c;
+}
+
+.ps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #1abc9c;
+}
