@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import image1 from "../../assets/1.PNG";
-import image2 from "../../assets/port2.PNG";
-import image3 from "../../assets/port3.PNG";
+import image1 from "../../assets/1.png";
+import image2 from "../../assets/port2.png";
+import image3 from "../../assets/port3.png";
 
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState(null);
